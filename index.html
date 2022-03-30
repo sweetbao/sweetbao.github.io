@@ -79,7 +79,7 @@
             <div class="col-sm-4 info-blocks">
                 <div class="info-blocks-in" style="width: 200%;text-align:justify">
                     <p><strong>Abstract:</strong>
-              Text-to-speech (TTS) frontend aims to convert input text into linguistic features for speech synthesis. In Mandarin TTS frontend, specifically, Chinese characters are converted into features of phonemes, tones, prosodies, and word segmentation. Due to different character pronunciations and word usage between Chinese dialects and Mandarin, Chinese dialect TTS may experience a maladaptation to the Mandarin pipeline with the conflict of training by dialect text and synthesizing by Mandarin text. In this paper, we propose a novel Chinese dialect TTS frontend with a translation module to prepare a more authentic text input to improve the synthesis performance and lower usage requirements. A non-autoregressive neural machine translation (NMT) model is used for this task for its fast inference speed and good performance. The contributions of this paper are the following. First, it is the first known work to incorporate translation into the Chinese dialect TTS front-end. Second, we adopt various tricks on the NMT model to further improve its performance.  The overall Chinese dialect TTS system can achieve a much better naturalness and comprehensibility.</p>
+              Chinese dialect text-to-speech(TTS) system usually can only be utilized by native linguists, because the written form of Chinese dialects has different characters, idioms, grammar and usage from Mandarin, and even the local speaker cannot input a correct sentence. For Mandarin text inputs, Chinese dialect TTS can only generate partly-meaningful speech with relatively poor prosody and naturalness. To lower the bar of use and make it more practical in commercial, we propose a novel Chinese dialect TTS frontend with a translation module. It helps to convert Mandarin text into idiomatic expressions with correct orthography and grammar, so that the intelligibility and naturalness of the synthesized speech can be improved. A non-autoregressive neural machine translation model with a glancing sampling strategy is proposed for the translation task. It is the first known work to incorporate translation with TTS frontend. Our experiments on Cantonese approve that the proposed frontend can help Cantonese TTS system achieve a 0.27 improvement in MOS with Mandarin inputs.</p>
                 </div>
             </div>
             
@@ -152,7 +152,7 @@
 							</div>
 						</div>	
 
-						<div class="row">
+						<!-- <div class="row">
 							<div class="col-md-3" style="margin-top: 12px;"> 
 							<p>希望不大，这说明我还有希望是吗？</p>
 							</div>
@@ -180,7 +180,7 @@
 							<div class="col-md-3">
 							<audio controls="control" src="wav/112_cant.wav" style="width:260px">
 							</div>
-						</div>	
+						</div>	 -->
 
 						<div class="row">
 							<div class="col-md-3" style="margin-top: 12px;"> 
@@ -197,7 +197,7 @@
 							</div>
 						</div>	
 
-						<div class="row">
+<!-- 						<div class="row">
 							<div class="col-md-3" style="margin-top: 12px;"> 
 							<p>从来没有的开始，哪来的放弃。</p>
 							</div>
@@ -210,7 +210,7 @@
 							<div class="col-md-3">
 							<audio controls="control" src="wav/171_cant.wav" style="width:260px">
 							</div>
-						</div>	
+						</div>	 -->
 
 						<div class="row">
 							<div class="col-md-3" style="margin-top: 12px;"> 
@@ -243,7 +243,7 @@
 						</div>	 -->
 					  
 
-<!-- 					  <div class="row">
+					  <div class="row">
 							<div class="col-md-3" style="margin-top: 12px;"> 
 							<p>我很累，但是我想你了。</p>
 							</div>
@@ -257,7 +257,7 @@
 							<audio controls="control" src="wav/191_cant.wav" style="width:260px">
 							</div>
 					  </div>
-
+<!-- 	
 					  <div class="row">
 							<div class="col-md-3" style="margin-top: 12px;"> 
 							<p>晕，饿坏了吧，到了赶紧吃饭。</p>
@@ -288,7 +288,7 @@
 							</div>
 						</div>	 -->
 
-					  <div class="row">
+<!-- 					  <div class="row">
 							<div class="col-md-3" style="margin-top: 12px;"> 
 							<p>你怎么知道这么多名牌，你才是富二代。</p>
 							</div>
@@ -301,7 +301,23 @@
 							<div class="col-md-3">
 							<audio controls="control" src="wav/235_cant.wav" style="width:260px">
 							</div>
+					  </div> -->
+
+					 <div class="row">
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p>他是个男生，她也是个好女生。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/399_mand.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>佢系个男仔，佢都系个好女仔。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/399_cant.wav" style="width:260px">
+							</div>
 					  </div>
+
 					  </div>
 
 		</div>
